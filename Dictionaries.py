@@ -34,7 +34,7 @@ customer_info = {
                  "age": 40, 
                  "children": {"name": "sopheak", "sex": "male"},
                  "account_start_date": 20190130,
-                 "number_members":["Mr.A", "M.B", "Miss.C"],
+                 "family_number":["Mr.A", "M.B", "Miss.C"],
                  #........
                  #........
                  #....etc...
@@ -70,9 +70,9 @@ d.items
 
 # Exercise: 30min
 
-str = "This is an awesome occation. This has never happend before."
+str = "awesome This is an awesome occation. This has never happend before."
 
-char_occurances = {}
+char_occurances = {} #empty dict
 for char in str:
     char_occurances[char] = char_occurances.get(char, 0)+1
 print(char_occurances)
@@ -89,3 +89,8 @@ print(word_occurances)
 
 for (key, value) in char_occurances.items():
     print(f"{key} {value}")
+
+for key in char_occurances.keys():
+        print(key)
+for val in char_occurances.values():
+    print(val)

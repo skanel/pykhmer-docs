@@ -5,13 +5,13 @@ Created on Wed Jan 30 23:10:22 2019
 @author: Kanel.Soeng
 """
 
-prime_numbers = (2,3,5,7,11)
+prime_numbers = (2, 3, 5, 7, 11) #[]
 type(prime_numbers)
 
 perfect_squres = [1,3,9,16,25,36]
 type(perfect_squres)
 
-my_tuple = ("ទីនេះ កម្ពុជា", 100, 12.47)
+my_tuple = ("ទីនេះ កម្ពុជា", 100,100, 12.47)
 my_tuple
 type(my_tuple)
 
@@ -37,6 +37,9 @@ l[0] = "new item"
 t[0] = "new item" 
 
 
-# Define a Tuple
-# Indexing in Tuple's
+# Define a Tuple  example: ()
+# Indexing in Tuple's = list [0:3]
 # Difference between the List and Tuple
+
+#list is mutable = its value can be change
+#tuple is immutable =  its value cannot be change
