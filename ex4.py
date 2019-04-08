@@ -12,7 +12,7 @@ data  = [
 
 
 #write header
-file.writelines(','.join(header)+"\n") 
+file.write(','.join(header)+"\n") 
 
 who_is_max_missed_call = []
 maximum = 0
