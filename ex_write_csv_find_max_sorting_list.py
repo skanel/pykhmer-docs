@@ -22,7 +22,7 @@ for item in data:
     file.write(','.join(item)+"\n") 
     
     #3. find who is max of missed_call in the specific date
-    if (int(item[5])> int(maximum) and item[6]==date_looking):
+    if (int(item[5]) > int(maximum) and item[6] == date_looking):
         maximum = item[5]
         who_is_max_missed_call= item
     else:
