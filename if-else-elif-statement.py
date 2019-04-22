@@ -8,14 +8,14 @@ Created on Wed Apr  3 21:27:45 2019
 if 3 > 2:
     print("Right)
     
-if 4>7:
+if 4 > 7:
     print("Right)
 else:
     print("Wrong")
 
 a = 3
 b = 5
-if a>b:
+if a > b:
     print("Yes, It is right!!")
 else:
     print("Try again")
@@ -31,9 +31,9 @@ drink = "Coke"
 
 if drink == "Coffee":
     print("We need some coffee")
-elif drink =="Water":
+elif drink == "Water":
     print("We need to drink water")
-elif drink =="Coke":
+elif drink == "Coke":
     print("We need to dink coke")
 else: 
     print("We need to drink")

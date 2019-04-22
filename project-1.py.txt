@@ -1,0 +1,25 @@
+1. create a new file name customer.csv
+2. write content into file
+	id, fistname, lastname, age, phone_number, total_misscalled, date
+	1    Sok	, reaksmey, 29,   091222999, 		 19 , 	20190404
+	2    Sok	, data,     20,   091222949, 		 8 , 	20190404
+	3    chan	, somnop,   60,   091222919, 		 18 , 	20190403
+	..
+
+	10
+
+3. find who is the max of missed_call in the specific date 
+4. sort customer list by age asc or desc, and print it out.
+
+Self-Learn
++ python operation 
++ python control flow
+
+next week
+- correct ex
+- review self learning
+- OOP
+--
+Applications
+
+

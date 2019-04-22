@@ -30,12 +30,12 @@ print("I will work after !!!")
 my_string = "Hello World"
 for letter in my_string:
     if letter =="r":
-        break
+        break #exit from loop
     print(letter)
     
 my_string = "Hello World"
 for letter in my_string:
-    if letter =="e":
+    if letter == "e":
         continue
     print(letter)
     

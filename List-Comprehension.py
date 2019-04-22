@@ -28,7 +28,8 @@ list1 = list(range(1,11)
 
 #2) Enumurate
 
-word ="Badman"
+word = "Badman"
+
 for item in word:
     print(item)
 
@@ -68,24 +69,24 @@ for a, b in zip(list1, list2):
     
 list1 = [1,2,3,4,5]
 list2 = ["a","b","c","d", "e"]
-lst3 = ["a", "b", "d"]
+list3 = ["a", "b", "d"]
 
-for item in zip(list1, list2. list3):
+for item in zip(list1, list2, list3):
     print(item)
 list1 = [1,2,3,4,5]
 list2 = ["a","b","c","d", "e"]
-lst3 = ["a", "b", "d"]
+list3 = ["a", "b", "d"]
 
-for a,b,c in zip(list1, list2. list3):
-    print(a,b,c)
+for a,b,c in zip(list1, list2, list3):
+    print(a, b, c)
 
 # 4) in
-"a"in [2,3,4]
+"a" in [2,3,4]
 "a" in [2,3,4, "a"]
 
-"s"in "school"
+"s" in "school"
 
-"s"in "School"
+"s" in "School"
 
 "k1" in {"k1":100 , "k2": 200, "k3":300}
 

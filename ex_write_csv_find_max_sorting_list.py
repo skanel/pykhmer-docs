@@ -34,7 +34,7 @@ for item in data:
     else:
         maximum = maximum
     
-#print(who_is_max_missed_call)    
+print(who_is_max_missed_call)    
 
 #4. Sort customer list by age, and print it out
 
