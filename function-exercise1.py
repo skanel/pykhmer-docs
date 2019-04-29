@@ -83,6 +83,17 @@ def sum_multiples(limit=20):
 
 sum_multiples()
 
+
+
+#Example: How to sort the list of tuple
+
+from operator import itemgetter
+inventory = [('apple', 5), ('apple', 3), ('banana', 2), ('pear', 5), ('orange', 1), ('apple', 1)]
+sorted(inventory, key= itemgetter(0,1) )
+
+
+
+
 """
 Question:
 You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
@@ -90,12 +101,44 @@ You are required to write a program to sort the (name, age, height) tuples by as
     2: Then sort based on age;
     3: Then sort by score.
 The priority is that name > age > score.
+
 If the following tuples are given as input to the program:
-Tom,19,80
-John,20,90
-Jony,17,91
-Jony,17,93
-Json,21,85
+INPUT:
+    Tom,19,80
+    John,20,90
+    Jony,17,91
+    Jony,18,93
+    Json,21,85
+
 Then, the output of the program should be:
-[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+[
+ ('John', '20', '90'),
+ ('Jony', '17', '91'),
+ ('Jony', '18', '93'), 
+ ('Json', '21', '85'), 
+ ('Tom', '19', '80')
+ ]
 """
+
+
+#SOLUTION
+
+#import the third-party library
+from operator import itemgetter
+
+#Create empty list
+persons = []
+
+#Loop forever, till user input nothing.
+while True:
+	line = input("input the tuple: ")
+	if not line:
+		break #Exit from loop if user nothing input
+	persons.append(tuple(line.split(','))) #split string kanel,23,60 into (kanel,23,60)
+
+persons = sorted(persons, key=itemgetter(0, 1, 2)) #sort the list of tuple by name>age,score
+
+print(persons)
+#loop over and printer the result
+for person in persons:
+    print (','.join(person))
