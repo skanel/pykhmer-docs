@@ -45,14 +45,16 @@ def quadratic(a,b,c):
     if delta > 0 :
         x1 = (-b + math.sqrt(delta))/(2*a)
         x2 = (-b - math.sqrt(delta))/(2*a)
-        print "សមីការដឺក្រេទី 2 មាន​ឬសពីរ​ផ្សេងគ្នា"
-        print "x1= %3.2f x2= %3.2f " %(x1,x2)
+        print("សមីការដឺក្រេទី 2 មាន​ឬសពីរ​ផ្សេងគ្នា")
+        print("x1= %3.2f x2= %3.2f " %(x1,x2))
     elif delta ==0 :
-       print "សមីកាមាន​ឬស​ឌុប x1=x2= %3.2f" %(-b/2*a)
+       print ("សមីកាមាន​ឬស​ឌុប x1=x2= %3.2f" %(-b/2*a))
     else :
-       print "សមីការគ្មាន​ឬស"  
-print "ដាក់បញ្ចូលតាម​លំដាប់លំដោយ មេគុណ a,b,c របស់​សមីការ​ដឹក្រេទី២ "	   
-a = float(raw_input('មេគុណ a:'))
+       print ("សមីការគ្មាន​ឬស" ) 
+       
+       
+print("ដាក់បញ្ចូលតាម​លំដាប់លំដោយ មេគុណ a,b,c របស់​សមីការ​ដឹក្រេទី២ ")
+a = float(input('មេគុណ a:'))
 b = float(input('មេគុណ b:'))
 c = float(input('មេ c:'))
 quadratic(a,b,c)	
