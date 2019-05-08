@@ -20,3 +20,6 @@ class Person :
         print ("Name: ", self.name)
         print ("Age: ", self.age)
         print ("Gender: ", self.gender)
+    
+p1 = Person("kanel", 12)
+p1.showInfo()
